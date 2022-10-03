@@ -1,0 +1,34 @@
+{% include 'header.html' %}
+
+<body>
+    <section id="navigation">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex">
+            <a class="navbar-brand">Ultimate<br>Bucketlist</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+              <ul class="navbar-nav justify-content-end">
+                  <li class="nav-item">
+                      <a class="menu" href="{{ url_for('home') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="menu" href="{{ url_for('register') }}">Register</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="menu" href="{{ url_for('login') }}">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="menu"  href="{{ url_for('bucketlist') }}">Bucketlist</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="menu"  href="{{ url_for('logout') }}">Logout</a>
+                  </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+  </section>
+</body>

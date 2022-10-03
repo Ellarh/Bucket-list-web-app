@@ -1,0 +1,124 @@
+
+
+#home{
+    background-image: url("background.jpg");
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar Section */
+#navigation{
+    padding: 2% 6%;
+}
+
+.menu{
+    color: white;
+     font-family: 'Tinos', serif;
+    font-size: 17px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+.navbar-brand{
+    font-family: 'Cookie', cursive;
+    font-size: 40px;
+    line-height: 33px;
+    color: #fff;
+}
+
+/* Main Body in the Home page */
+#home-body{
+     background-color: #;
+      padding: 3% 6%;
+}
+
+.heading{
+    font-family: 'Tinos', serif;
+     text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.buttons{
+    padding: 10% 20%;
+     font-family: 'Tinos', serif;
+}
+
+.first-button{
+    background-color: #DFD3C3;
+    color: #000;
+    padding: 3% 15%;
+}
+
+.second-button{
+    padding: 3% 15%;
+    color: #fff;
+}
+
+/* Register Section */
+.register-body{
+    background-color: #7D6E83;
+}
+
+#register-column{
+    padding: 3% 7%;
+}
+
+.heading3{
+    font-family: 'Tinos', serif;
+     text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    padding: 4%;
+}
+
+.register-button-div{
+    padding: 7px 0;
+}
+
+.register-button{
+     background-color: #DFD3C3;
+    color: #000;
+    padding: 0.5% 5%;
+}
+
+.form-check{
+    color: #fff;
+}
+
+/* Login Section */
+#login-column{
+    padding: 3% 7%;
+}
+
+/* Bucket List Section */
+#bucketlist-section{
+     padding: 3% 7%;
+}
+
+.adventure-text{
+    font-family: 'Tinos', serif;
+     text-align: center;
+    font-size: 20px;
+    color: #fff;
+    padding: 2% 0;
+}
+
+.bucketlist-button{
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+
+@media (max-width: 916px){
+    #home{
+    background-image: url("background.jpg");
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+}

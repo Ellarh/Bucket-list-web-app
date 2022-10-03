@@ -1,0 +1,11 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+
+<body class="register-body">
+    <section id="bucketlist-section">
+        <h1 class="heading">Your next Adventure is one click away</h1>
+        <h3 class="heading3">My Next Adventure is to {{ list_item }}.</h3>
+        <div class="bucketlist-button"> <a href="{{ url_for('bucketlist') }}" class="btn btn-secondary btn-lg register-button">Next?</a></div>
+    </section>
+</body>

@@ -1,0 +1,30 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+            <p style="color: red; font-size: 20px; text-align: center;">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<body class="register-body">
+    <section id="login-column">
+            <h1 class="heading">Already have an Account?</h1>
+            <h3 class="heading3">Login Instead</h3>
+        <div>
+            <form action="{{ url_for('login') }}" method="post">
+                <label></label>
+                <input type="text" style="colo" class="form-control" placeholder="Username" name="name" required="required">
+                <label></label>
+                <input type="password" class="form-control" placeholder="Password" name="password" required="required"></br>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" required="required">
+                    <label class="form-check-label form-check">All Information is correct</label>
+                </div>
+                <div class="register-button-div"><button class="btn btn-secondary btn-lg register-button">Submit</button></div>
+            </form>
+        </div>
+    </section>
+</body>

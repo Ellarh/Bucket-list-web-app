@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+{% include 'navbar.html' %}
+<body id="home">
+
+<!--Main Body-->
+<section id="home-body">
+    <div class="row">
+        <div class="col-lg-6">
+            <div>
+                <h1 class="heading">ARE YOU READY FOR YOUR NEXT GREAT ADVENTURE??</h1>
+            </div>
+            <div class="buttons">
+                <a href="{{ url_for('register') }}" class="btn btn-secondary btn-lg first-button">Register</a>
+                <a href="{{ url_for('login') }}" class="btn btn-outline-secondary btn-lg second-button">Login</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
