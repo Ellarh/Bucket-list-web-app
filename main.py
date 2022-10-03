@@ -7,12 +7,12 @@ import os
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('KEY')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///list.database'
+app.config['SECRET_KEY'] = os.environ['KEY']
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE']
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 db = SQLAlchemy(app)
 
-API_KEY = os.environ.get('API_KEY')
+API_KEY = os.environ['API_KEY']
 ENDPOINT = "https://api.api-ninjas.com/v1/bucketlist"
 
 login_manager = LoginManager()
